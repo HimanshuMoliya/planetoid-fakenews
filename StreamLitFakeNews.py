@@ -40,6 +40,14 @@ def predict(news):
 
 
 def run():
+    hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+
+    """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
     st.sidebar.info('You can either enter the news item online in the textbox or upload a txt file')    
     st.set_option('deprecation.showfileUploaderEncoding', False)       
     add_selectbox = st.sidebar.selectbox("How would you like to predict?", ("Online", "Txt file"))    
