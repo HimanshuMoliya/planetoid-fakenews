@@ -1,13 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Sep 20 13:57:09 2020
-
-@author: rahul
-
-Note - This can be run from anaconda prompt using -  streamlit run "SteamLitFakeNews.py"
-
-"""
-
 
 import streamlit as st
 import pandas as pd
